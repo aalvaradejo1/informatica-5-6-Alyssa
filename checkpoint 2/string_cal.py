@@ -1,14 +1,9 @@
 def main():
     a = input("Enter an arithmetic operation: ")
     
-    operation()
+    operation(a)
         
-def operation():
-    if n == "+":
-        print(f"{a} + {b} = {a + b}")
-    if n == "-":
-        print(f"{a} - {b} = {a-b}")
-    if n == "*":
-        print(f"{a} * {b} = {a*b}")
+def operation(n,):
+    n.split(.1)
 
 main()
