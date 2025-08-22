@@ -1,6 +1,6 @@
 def main():
-    a = input("Enter a number: ")
-    b = input("Enter a number: ")
+    a = int(input("Enter a number: "))
+    b = int(input("Enter a number: "))
     symbol = input("Enter the symbol for the operation you want to use(+,-,*)")
     
     operation(symbol, a, b)
