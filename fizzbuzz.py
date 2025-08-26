@@ -13,9 +13,9 @@ def main():
         print("Prime ")
     elif number != 7 and number % 7 != 0 and number % number == 0:
         print("Prime ")
-    elif number != 8 and number % 2 != 8 and number % number == 0:
+    elif number != 8 and number % 8 != 0 and number % number == 0:
         print("Prime ")
-    elif number != 9 and number % 2 != 9 and number % number == 0:
+    elif number != 9 and number % 9 != 0 and number % number == 0:
         print("Prime ")
     elif number != 10 and number % 10 != 0 and number % number == 0:
         print("Prime ")
