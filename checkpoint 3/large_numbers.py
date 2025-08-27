@@ -4,4 +4,5 @@ def main():
     n3 = int(input("Number 3:"))
     n4 = int(input("Number 4:"))
 
-    if n1 > n2 and n1 > n3 and n1
+    if n1 > n2 and n1 > n3 and n1 > n4:
+        
