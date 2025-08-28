@@ -20,6 +20,18 @@ def loop(price, total_paid, name):
     
     if total_paid >= 50:
         print(f"Thanks! Here's your coke🥤, {name}.")
+        print("  .!.!.")
+        print("   ! !   ")
+        print("   ; :   ")
+        print("  ;   :  ")
+        print(" ;_____: ")
+        print(" ! Coke! ")
+        print(" !_____!")
+        print(" :     : ")
+        print(" :     ; ")
+        print(" .'   '. ")
+        print(" :     : ")
+        print("  '''''")
         print(f"Here's your change {total_paid - 50}")
 
 main()
