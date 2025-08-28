@@ -7,3 +7,5 @@ while True:
         elif greeting.startswith("h"):
                 print("You get $20 dollars")
         else: print("You get $100 dollars")
+
+arreglar para que se detenga
