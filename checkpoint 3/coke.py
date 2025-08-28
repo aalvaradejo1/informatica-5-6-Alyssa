@@ -1,21 +1,26 @@
 def main():
+    price = 50
+    total_paid = 0
     name = input("Enter your name: ")
-    total = 50
-    coin1 = int(input("The total is 50 cents, enter the first coin:"))
+    loop(price, total_paid, name)
+    
+    
+    
 
+def loop(price, total_paid, name):
+    while price > 0:
+        print(f"Amount due: {price}")
+        pay = int(input("Insert coin:"))
 
-    while True:
-        money = total - coin1
-        print(f"you still lack {money}")
-        
-        next_coin = int(input("enter your next coin:"))
-        if next_coin <= money:
-            more_money = money - next_coin
-            print(f"you still lack {more_money}")
-        elif more_money == 0:
-                print(f"Here is a coke for {name}")
-                break
-
-
+        if pay == 25 or pay == 10 or pay == 5:
+            price = price - pay
+            total_paid = total_paid + pay
+        else:
+            print("Not a coin.")
+    
+    if total_paid >= 50:
+        print(f"Thanks! Here's your coke🥤, {name}.")
+        print(f"Here's your change {total_paid - 50}")
 
 main()
+
