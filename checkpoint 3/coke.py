@@ -13,8 +13,8 @@ def main():
             more_money = money - next_coin
             print(f"you still lack {more_money}")
         elif more_money == 0:
-            print(f"Here is a coke for {name}")
-        break
+                print(f"Here is a coke for {name}")
+                break
 
 
 
