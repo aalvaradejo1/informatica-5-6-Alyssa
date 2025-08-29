@@ -26,7 +26,7 @@ def loop(price, total_paid, name):
         print("  ;   :  ")
         print(" ;_____: ")
         print(" ! Coke! ")
-        print(" !_____!")
+        print(f" !{name}\t!")
         print(" :     : ")
         print(" :     ; ")
         print(" .'   '. ")
