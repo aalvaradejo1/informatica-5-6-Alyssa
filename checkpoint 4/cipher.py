@@ -1,53 +1,24 @@
-def main():
+def main():  # define the main function
     
-    message = input("Write a message: ").lower()
+    message = input("Write a message: ").lower()    # we ask the user for a message
 
-    encode_message(message)
+    encode_message(message)    # we execute the function
 
-def encode_message(message):
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-    cipher = "zyxwvutsrqponmlkjihgfedcba"
-    new_message = ""
-    i = 0
+def encode_message(text):       #definind the function that will encode the message
+    alphabet = "abcdefghijklmnopqrstuvwxyz"       # created a variable to store all the letters from a to z
+    cipher = "zyxwvutsrqponmlkjihgfedcba"         # created a variable to store all the letters from z to a
+    new_message = ""                # that is the variable which will be printed at the end
+    i = 0         # this is our counter
 
-    while i < len(message):
-        if message[0] == alphabet[0]:
-            print(cipher[0])
-            i += 1
-        if message[1] == alphabet[1]:
-            print(cipher[1])
-            i += 1
-        if message[2] == alphabet[2]:
-            print(cipher[2])
-        if message[3] == alphabet[3]:
-            print(cipher[3])
-        if message[4] == alphabet[4]:
-            print(cipher[4])
-        if message[5] == alphabet[5]:
-            print(cipher[5])
-        if message[6] == alphabet[6]:
-            print(cipher[6])
-        if message[7] == alphabet[7]:
-            print(cipher[8])
-        if message[9] == alphabet[9]:
-            print(cipher[9])
-        if message[10] == alphabet[10]:
-            print(cipher[10])
-        if message[11] == alphabet[11]:
-            print(cipher[11])
-        if message[12] == alphabet[12]:
-            print(cipher[12])
-        if message[13] == alphabet[13]:
-            print(cipher[13])
-        if message[14] == alphabet[14]:
-            print(cipher[14])
-        if message[15] == alphabet[15]:
-            print(cipher[15])
-        if message[16] == alphabet[16]:
-            print(cipher[16])
-        if message[17] == alphabet[17]:
-            print(cipher[17])
+    while i < len(text):      # inicialized the loop with our counter that will update every time the loop starts again until the condition is false
+        char = text[i]              # we created a variable that stores the position 0( but will update every time) of the message the user put
+        
+        if char in alphabet:                   # we created a condition which states that if the character that is in the position 0  is in the alphabet it will do the following
+            cipher_index = alphabet.find(char) # in this variable will be stored the position that the letter of the massage takes in the alphabet
+            new_message += cipher[cipher_index] # # here we updated the new message that will be printed to heve the character that is in the same position as in the alphabet but for the cipher variable so that it is encoded
+        else: new_message += char              # here we stated that if any character that doesn't cualifies for the previous condition it will just be printed or added to the variable that will be printed at the end
+        i += 1      # here we updated our counter so that it can do the same but for the rest of the letters of the message
+    print(new_message)  # print the new message after every letter is encoded and added together
 
-
-main()
+main() # we "closed" the main funtion, finished our code
 
