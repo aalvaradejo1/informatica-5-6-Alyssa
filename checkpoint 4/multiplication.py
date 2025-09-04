@@ -13,6 +13,8 @@ def multi(num):
             print(f"{num} x {m} = {table}")
             m += 1
             
-        else: print("try again with an integer number")
+        else:
+            print("try again with an integer number")
+            break
 
 main()  
