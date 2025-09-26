@@ -23,7 +23,12 @@
 
 #Matrices
 matrix = [[1,2,3], [4,5,6], [7,8,9]]
+length_row = len(matrix)
+length_column = len(matrix[0])
 
+for column_index in range(length_column):
+    new_matrix = []
+    for row_index in range(length_row):
+        new_matrix.append(matrix[row_index][column_index])
 
-for row in matrix:
-    
+    print(new_matrix)
