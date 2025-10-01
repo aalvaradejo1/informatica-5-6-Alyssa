@@ -6,6 +6,7 @@ def character_counter(message, dictionary):
     print(dictionary)
     print(len(message))
     
+    
 
 message = input("Write a message: ")
 dictionary = {}

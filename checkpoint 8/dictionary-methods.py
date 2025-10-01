@@ -19,8 +19,12 @@ print(dictionary.items())
 for i in dictionary.items():
     print(i)
 
+
 #print Key and Value using methods
 # to do
+for k in dictionary:
+    
+    print(f"{k} : {dictionary[k]}")
 
 
 #Get
