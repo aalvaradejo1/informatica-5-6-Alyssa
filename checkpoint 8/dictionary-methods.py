@@ -22,9 +22,11 @@ for i in dictionary.items():
 
 #print Key and Value using methods
 # to do
+i = 0
 for k in dictionary:
-    
-    print(f"{k} : {dictionary[k]}")
+
+    print(f"{dictionary.keys[i]} : {dictionary.value[i]}")
+    # print(f"{k} : {dictionary[k]}")
 
 
 #Get

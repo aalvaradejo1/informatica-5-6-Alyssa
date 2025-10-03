@@ -18,9 +18,6 @@ def character_counter(message, dictionary):
 
     largest_number_2 = max(dictionary, key=dictionary.get)
     print(f"The most repeted character is {largest_number_2}, repated {dictionary[largest_number_2]} times")
-
- 
-    
     
 
 message = input("Write a message: ")
