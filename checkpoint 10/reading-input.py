@@ -3,14 +3,15 @@ def main():
   print("You typed in:", number)
 
 def read_input(promt,small,large): 
-  try:
-    x = int(input(promt))
-    if 5 < x < 10:
-      return x
-    else:
-      print("Please type a number BETWEEN ",small,"and", large)
+  while True:
+    try:
+      x = int(input(promt))
+      if 5 < x < 10:
+        return x
+      else:
+        print("Please type a number BETWEEN ",small,"and", large)
 
-  except ValueError:
-    print("Please type a NUMBER between ",small,"and",large)
+    except ValueError:
+      print("Please type a NUMBER between ",small,"and",large)
 
 main()
