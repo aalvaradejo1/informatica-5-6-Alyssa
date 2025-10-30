@@ -24,10 +24,7 @@ def percentage(promt):
             elif num > den:
                 print("Invalid, try again")
                 pass
-        except ValueError:
-            print("Invalid, try again")
-            pass
-        except ZeroDivisionError:
+        except (ValueError, IndexError, ZeroDivisionError):
             print("Invalid, try again")
             pass
 main()
